@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="home"><!--this is parent of navbar-->
+        <nav> <!--this is the NAVBAR container-->
+            <div class="nav-center"><!--this is the navbar to center-->
+                <div class="header"><!--for the logo-->
+                    <a id="logo"><span id="logo-span">KAZE</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" class="scroll-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="scroll-link">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="scroll-link">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="scroll-link">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="scroll-link">CONTACT</a>
+                    </li>
+                </ul>
+                <!--button after resize-->
+                <div class="burgerbtnparent">
+                    <button class="nav-toggle">
+                        
+                            <div class="burger">
+                                <div class="burgerline"></div>
+                                <div class="burgerline"></div>
+                                <div class="burgerline"></div>
+                            </div>
+                        
+                    </button>
+                </div>
+            </div>
+        </nav>        
+    </header>
+    <main>
+        <div class="home" id="home"></div>
+        <div class="about" id="about"><h1>ABOUT</h1></div>
+        <div class="projects" id="projects"><h1>PROJECTS</h1></div>
+        <div class="skills" id="skills"><h1>SKILLS</h1></div>
+        <div class="contact" id="contact"><h1>CONTACT</h1></div>
+    </main>
+</body>
+</html>
