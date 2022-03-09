@@ -120,9 +120,7 @@ a:hover{
 }
 
 /************LINKS pages*************/
-.homme{
-    height: 600px;
-}
+
 .about,.skills,.projects,.contact{
     min-height: 650px;
 }
@@ -258,6 +256,37 @@ h1{
 
 
 
+/***********************
+    ---------------
+    ||||ABOUT||||||
+    ~~~~~~~~~~~~~~~
+***********************/
+.about-para{
+    background-color: rgb(168, 227, 255);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 520px;
+    margin: 16px;
+    flex-wrap: wrap;
+}
+.para01{
+    background-color: aliceblue;
+    max-width: 300px;
+    margin:16px;
+    padding: 25px;
+    border-radius: 40px;
+    font-family: 'poppins',sans-serif;
+}
+.para02{
+    background-color: aliceblue;
+    max-width: 300px;
+    margin:16px;
+    padding: 25px;
+    border-radius: 40px;
+    font-family: 'poppins',sans-serif;
+}
 
 /***********************
     ---------------

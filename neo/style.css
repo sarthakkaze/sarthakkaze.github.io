@@ -204,7 +204,7 @@ h1{
     font-size: 50px;
     color: white;
     line-height: 1em;
-
+    transition:0.3s;
     
 }
 .home-content-stroke{
@@ -221,6 +221,8 @@ h1{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    transition:0.3s;
+
 } 
 
 
