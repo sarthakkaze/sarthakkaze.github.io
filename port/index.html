@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Gruppo&family=Major+Mono+Display&family=Poppins:wght@200;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2581c5d695.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SARTHAK</title>
+  </head>
+  <body>
+    <header id="home">
+      <!--this is parent of navbar-->
+      <nav>
+        <!--this is the NAVBAR container-->
+        <div class="nav-center">
+          <!--this is the navbar to center-->
+          <div class="header">
+            <!--for the logo-->
+            <a id="logo"><span id="logo-span">KAZE</span></a>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a href="#home" class="scroll-link">HOME</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">ABOUT</a>
+            </li>
+            <li>
+              <a href="#projects" class="scroll-link">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#skills" class="scroll-link">SKILLS</a>
+            </li>
+            <li>
+              <a href="#contact" class="scroll-link">CONTACT</a>
+            </li>
+          </ul>
+          <!--button after resize-->
+          <div class="burgerbtnparent">
+            <button class="nav-toggle">
+              <div class="burger">
+                <div class="burgerline"></div>
+                <div class="burgerline"></div>
+                <div class="burgerline"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="home" id="home">
+        <div class="homebox">
+          <div class="homeboxcontent">
+            <!--    <div class="profilepiccontainer">
+                        <img class="profilepic" src="img/IMG_20220301_132300__01-04.jpeg"/>
+                    </div>  -->
+
+            <svg class="vector" viewBox="0 0 200 200">
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M42.9,-31.7C55.4,-18.5,65.3,-0.7,63.3,17C61.3,34.7,47.5,52.3,28.3,63.2C9.2,74.1,-15.3,78.4,-29.6,68.7C-43.9,59.1,-48.1,35.5,-53.8,11.9C-59.5,-11.7,-66.8,-35.4,-58.1,-47.6C-49.4,-59.9,-24.7,-60.7,-4.7,-56.9C15.2,-53.2,30.4,-44.8,42.9,-31.7Z"
+                  transform="translate(100 100)"
+                />
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M42.9,-31.7C55.4,-18.5,65.3,-0.7,63.3,17C61.3,34.7,47.5,52.3,28.3,63.2C9.2,74.1,-15.3,78.4,-29.6,68.7C-43.9,59.1,-48.1,35.5,-53.8,11.9C-59.5,-11.7,-66.8,-35.4,-58.1,-47.6C-49.4,-59.9,-24.7,-60.7,-4.7,-56.9C15.2,-53.2,30.4,-44.8,42.9,-31.7Z"
+                  transform="translate(100 100)"
+                />
+                <image class="vector-img" xlink:href="img/222.jpeg" />
+              </g>
+            </svg>
+
+            <div class="home-content para" data-value="-2">
+              <p class="Sarthak" style="text-align: left;">SARTHAK<br/>SHARMA</p>
+              <p style="text-align: left;font-family: 'Major Mono Display', monospace;">Web Developer<br/>& Designer</p>
+            </div>
+            <div class="home-content-stroke para" data-value="-2">
+              <p class="Sarthak-stroke" style="text-align: left;
+              ">SARTHAK<br/>SHARMA</p>
+            </div>
+
+
+
+            
+          </div>
+
+          <div class="homeboxlinks">
+            <a href="https://www.instagram.com/sarthak.kaze/" target="_blank"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a href="https://github.com/sarthakkaze" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100005793736598"
+              target="_blank"
+              ><i class="fab fa-facebook fa-2x"></i></a
+            ><!--fa-2x is for sizing the logo-->
+          </div>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <h1>about</h1>
+
+        <div>
+          <p>
+            I am a hobbyist Web Developer with a working profiency in HTML, CSS,
+            and jQuery. I have a solid understanding of Bootstrap, SASS, and Git
+            version control. I am currently expanding my skill set by studying
+            Javascript and Ruby on Rails along with SQL. My goal is to take the
+            step from hobbyist to professional with a company where I can learn,
+            grow and showcase my skills. I believe that with my current
+            experience I would be an excellent choice for an entry level juinor
+            developer.
+          </p>
+        </div>
+      </div>
+      <div class="projects" id="projects"><h1>projects</h1></div>
+      <div class="skills" id="skills"><h1>skills</h1></div>
+      <div class="contact" id="contact"><h1>contact</h1></div>
+      <p id="updates">UNDER CONSTRUCTION</p>
+    </main>
+  </body>
+</html>

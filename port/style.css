@@ -1,0 +1,293 @@
+/***********************
+    G  L  O  B  A  L
+***********************/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+}
+main{
+    text-align: center;    
+}
+
+
+nav{
+    padding: 15px;
+}
+.nav-center{
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    align-items: center;
+    border-radius: 10px;
+    background: #e6e6e6;
+    box-shadow:  5px 5px 20px #BABECC, 
+                -5px -5px 10px #ffffff;
+    transition: 0.3s;
+}
+/*
+.nav-center:hover{
+    box-shadow:  4px 4px 8px #BABECC, 
+    -4px -4px 10px #ffffff;
+    transition: 0.3s;
+}
+*/
+
+/*
+.header{
+    background-color: rgba(255, 255, 255, 0.329);
+    margin: 40px;
+    padding: 2px 0px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.header:hover{
+    background-color: transparent;
+    transition: 0.3s;
+}*/
+#logo-span{   
+     padding: 0 4rem;
+     font-family: 'Major Mono Display', monospace;
+     color: rgb(39, 39, 39);
+     transition: 0.9s;
+}
+#logo-span:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.nav-links{
+    display: block;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(109, 109, 109);
+    transition: 0.7s;
+}
+a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+.burger{
+    transition: 0.4s;
+}
+.nav-toggle{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background: pink;
+    border: 0px;
+    transition: 0.4s;
+   /* box-shadow: -5px -5px 20px white,  5px 5px 20px  #BABECC;*/
+}
+.burgerline{
+    width: 25px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(243, 236, 236);
+    margin: 5px;
+    transition: 0.5s;
+}
+.nav-toggle:hover{
+    background-color: #e6e6e6;
+    transition: 0.4s;
+}
+.nav-toggle:hover .burgerline{
+    background-color: rgb(252, 173, 186);
+    transition: 0.7s;
+}
+
+/************LINKS pages*************/
+.homme{
+    height: 600px;
+}
+.about,.skills,.projects,.contact{
+    min-height: 650px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    padding: 0 20px;
+}
+#logo{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;  
+}
+
+/*<<<<<<<<<<<<<<<<<< C O N T E N T >>>>>>>>>>>>>>>>>>*/
+
+.homebox{
+    background-color: rgb(255, 192, 203);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 520px;
+    margin: 16px;
+}
+.homeboxcontent{
+ 
+    position: relative;
+  /*  background-color: rgb(248, 168, 114); */
+    min-width: 400px;
+    padding:20px;
+    margin: 7px;
+    border-radius: 5px;
+    align-items: center;
+}
+.homeboxlinks{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 70px;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 5px;
+ /*   background-color:palegreen; */
+}
+.profilepiccontainer{
+    position: relative;
+    left: 150px; 
+    width: 150px;
+    height: 230px;
+}
+.vector{
+    
+    z-index: 12;
+    display: inline-block;
+    position:relative;
+    left: 50px;
+    bottom: 50px;
+    width: 400px;
+}
+.vector-img{
+    width: 200px;
+}
+.home-content{
+    z-index: 11;
+    position: absolute;
+    top:200px;
+
+}
+.Sarthak{
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    line-height: 1em;
+
+    
+}
+.home-content-stroke{
+    z-index: 12;
+    position: absolute;
+    top:200px;
+    
+}
+.Sarthak-stroke{
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+} 
+
+
+
+
+.profilepic{
+    position: inherit;
+    clip-path: circle(50% at 100% 10%);
+    
+    width: 200px;
+}
+.fa-facebook, .fa-github, .fa-instagram{
+    background-color:transparent;
+    color:rgb(32, 32, 32);
+    transition:0.3s;
+
+}
+.fa-facebook:hover{
+    color: #3b5898;
+    transition:0.5s;
+}
+.fa-github:hover{
+    color:#ffffff;
+}
+.fa-instagram:hover{
+    color: #ffffff;
+}
+.fab{
+    padding: 20px 10px;
+}
+
+
+
+
+
+
+
+
+/***********************
+    ---------------
+    |||||||||||||||
+    ~~~~~~~~~~~~~~~
+***********************/
+
+
+.burgerbtnparent{
+    display: none;
+}
+.scroll-link{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .burgerbtnparent{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+  
+}
+
+#updates{
+    letter-spacing: 4px;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.514);
+    color:white;
+}
