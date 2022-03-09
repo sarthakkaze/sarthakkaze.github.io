@@ -56,7 +56,7 @@ nav{
 }*/
 #logo-span{   
      padding: 0 4rem;
-     font-family: 'Pacifico', cursive;
+     font-family: 'Major Mono Display', monospace;
      color: rgb(39, 39, 39);
      transition: 0.9s;
 }
@@ -120,12 +120,15 @@ a:hover{
 }
 
 /************LINKS pages*************/
-
-.home,.about,.skills,.projects,.contact{
+.homme{
     height: 600px;
 }
+.about,.skills,.projects,.contact{
+    min-height: 650px;
+}
 h1{
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
     border-radius: 10px;
     display: inline-block;
     width: 200px;
@@ -146,17 +149,21 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 500px;
+    height: 520px;
     margin: 16px;
 }
 .homeboxcontent{
+ 
+    position: relative;
   /*  background-color: rgb(248, 168, 114); */
-    max-width: 200px;
+    min-width: 400px;
     padding:20px;
     margin: 7px;
     border-radius: 5px;
+    align-items: center;
 }
 .homeboxlinks{
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,6 +173,64 @@ h1{
     margin: 7px;
     border-radius: 5px;
  /*   background-color:palegreen; */
+}
+.profilepiccontainer{
+    position: relative;
+    left: 150px; 
+    width: 150px;
+    height: 230px;
+}
+.vector{
+    
+    z-index: 12;
+    display: inline-block;
+    position:relative;
+    left: 50px;
+    bottom: 50px;
+    width: 400px;
+}
+.vector-img{
+    width: 200px;
+}
+.home-content{
+    z-index: 11;
+    position: absolute;
+    top:200px;
+
+}
+.Sarthak{
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    line-height: 1em;
+
+    
+}
+.home-content-stroke{
+    z-index: 12;
+    position: absolute;
+    top:200px;
+    
+}
+.Sarthak-stroke{
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+.profilepic{
+    position: inherit;
+    clip-path: circle(50% at 100% 10%);
+    
+    width: 200px;
 }
 .fa-facebook, .fa-github, .fa-instagram{
     background-color:transparent;
@@ -186,6 +251,10 @@ h1{
 .fab{
     padding: 20px 10px;
 }
+
+
+
+
 
 
 
