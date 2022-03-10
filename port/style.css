@@ -149,6 +149,7 @@ h1{
     justify-content: space-around;
     height: 520px;
     margin: 16px;
+    
 }
 .homeboxcontent{
  
@@ -208,8 +209,7 @@ h1{
 .home-content-stroke{
     z-index: 12;
     position: absolute;
-    top:200px;
-    
+    top:200px; 
 }
 .Sarthak-stroke{
     font-family: 'poppins',sans-serif;
@@ -314,6 +314,22 @@ h1{
   
 }
 
+@media screen and (max-width: 500px) {
+    .homebox{
+        flex-direction: column;
+    }
+    .homeboxlinks{
+        flex-direction: row;
+    }
+    .home-content{
+       left: 50px;
+        top:250px; 
+    }.home-content-stroke{
+        left: 50px;
+        top:250px; 
+    }
+
+}
 #updates{
     letter-spacing: 4px;
     padding: 20px;
