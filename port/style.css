@@ -173,14 +173,15 @@ h1{
     border-radius: 5px;
  /*   background-color:palegreen; */
 }
+/*
 .profilepiccontainer{
     position: relative;
     left: 150px; 
     width: 150px;
     height: 230px;
-}
+}*/
 .vector{
-    
+    overflow: hidden;
     z-index: 12;
     display: inline-block;
     position:relative;
@@ -203,8 +204,6 @@ h1{
     font-size: 50px;
     color: white;
     line-height: 1em;
-
-    
 }
 .home-content-stroke{
     z-index: 12;
@@ -226,8 +225,7 @@ h1{
 
 .profilepic{
     position: inherit;
-    clip-path: circle(50% at 100% 10%);
-    
+    clip-path: circle(50% at 100% 10%);                
     width: 200px;
 }
 .fa-facebook, .fa-github, .fa-instagram{
@@ -321,6 +319,10 @@ h1{
     .homeboxlinks{
         flex-direction: row;
     }
+    .homeboxcontent{
+        margin:0px;
+        padding:0px;
+    }
     .home-content{
        left: 50px;
         top:250px; 
@@ -328,6 +330,9 @@ h1{
         left: 50px;
         top:250px; 
     }
+    .vector{
+        left: 0px;}
+    
 
 }
 #updates{
