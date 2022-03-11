@@ -236,7 +236,7 @@ h1{
 }
 .fa-facebook:hover{
     color: #3b5898;
-    transition:0.5s;
+    transition:0.3s;
 }
 .fa-github:hover{
     color:#ffffff;
@@ -247,8 +247,13 @@ h1{
 .fab{
     padding: 20px 10px;
 }
-
-
+.fa-behance{
+    color: black;
+}
+.fa-behance:hover{
+    color: white;
+    transition:0.3s;
+}
 
 
 
