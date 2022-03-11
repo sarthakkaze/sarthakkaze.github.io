@@ -143,7 +143,7 @@ h1{
 
 .homebox{
     background-color: rgb(255, 192, 203);
-    border-radius: 7px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -196,6 +196,7 @@ h1{
     z-index: 11;
     position: absolute;
     top:200px;
+    animation: wobble 3s infinite;
 
 }
 .Sarthak{
@@ -209,6 +210,7 @@ h1{
     z-index: 12;
     position: absolute;
     top:200px; 
+    animation: wobble 3s infinite;
 }
 .Sarthak-stroke{
     font-family: 'poppins',sans-serif;
@@ -219,10 +221,6 @@ h1{
     -webkit-text-stroke-color: rgb(255, 255, 255);
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
 } 
-
-
-
-
 .profilepic{
     position: inherit;
     clip-path: circle(50% at 100% 10%);                
@@ -255,7 +253,33 @@ h1{
     transition:0.3s;
 }
 
+@keyframes wobble{
+    0%{
+        top:200px;   
+        left: 0px;
+        
+        transform: translateX(20px);
+    }
+    33%{
+        top:210px;   
+        left: 0px;
+        transform: translateY(10px);
+        transform: translateX(-20px);
+    }
+    66%{
+        top:210px;   
+        left: 20px;
+        transform: translateY(10px);
+        transform: translateX(20px);
 
+    }
+    
+    100%{
+        top:200px;   
+        left: 0px;
+        transform: translateX(20px);
+    }
+}
 
 
 
@@ -264,14 +288,33 @@ h1{
     ||||ABOUT||||||
     ~~~~~~~~~~~~~~~
 ***********************/
+.about{
+    position: relative;
+    margin-top: 60px;
+}
+.about-head{
+    display: inline-block;
+    position: absolute;
+    padding: 0 30px 0px 20px;
+    right: 20px;
+    top: -50px;
+
+}
+.about-head p{
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+}
 .about-para{
     background-color: rgb(168, 227, 255);
-    border-radius: 7px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     min-height: 520px;
     margin: 16px;
+    padding: 20px;
     flex-wrap: wrap;
 }
 .para01{
@@ -290,7 +333,27 @@ h1{
     border-radius: 40px;
     font-family: 'poppins',sans-serif;
 }
-
+.about-location{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    min-width: 250px;
+    border-radius: 40px;
+    background-color: aliceblue;
+}
+.location-pin{
+    max-width: 50px;
+    margin: 10px 0;
+}
+.address{
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.address:hover{
+    color: black;
+}
 /***********************
     ---------------
     |||||||||||||||
