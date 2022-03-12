@@ -256,7 +256,7 @@ h1{
 @keyframes wobble{
     0%{
         top:200px;   
-        left: 0px;
+        left: 0px; 
         
         transform: translateX(20px);
     }
