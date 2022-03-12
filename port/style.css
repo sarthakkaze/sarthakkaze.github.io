@@ -196,7 +196,7 @@ h1{
     z-index: 11;
     position: absolute;
     top:200px;
-    animation: wobble 3s infinite;
+    animation: wobble 5s infinite;
 
 }
 .Sarthak{
@@ -210,7 +210,7 @@ h1{
     z-index: 12;
     position: absolute;
     top:200px; 
-    animation: wobble 3s infinite;
+    animation: wobble 5s infinite;
 }
 .Sarthak-stroke{
     font-family: 'poppins',sans-serif;
@@ -255,29 +255,16 @@ h1{
 
 @keyframes wobble{
     0%{
-        top:200px;   
-        left: 0px; 
-        
-        transform: translateX(20px);
+        transform: translate(100px,70px);
     }
-    33%{
-        top:210px;   
-        left: 0px;
-        transform: translateY(10px);
-        transform: translateX(-20px);
+    33%{               
+        transform: translate(130px,15px);
     }
     66%{
-        top:210px;   
-        left: 20px;
-        transform: translateY(10px);
-        transform: translateX(20px);
-
+        transform: translate(180px,30px);
     }
-    
     100%{
-        top:200px;   
-        left: 0px;
-        transform: translateX(20px);
+        transform: translate(100px,70px);
     }
 }
 
@@ -400,7 +387,17 @@ h1{
     }
     .vector{
         left: 0px;}
-    
+        @keyframes wobble{
+            
+            33%{
+               
+                transform: translate(10px,-50px);
+            }
+            
+            66%{
+                transform: translate(70px,-20px);
+            }
+        }
 
 }
 #updates{
