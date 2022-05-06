@@ -11,6 +11,12 @@
     font-weight: lighter;
     scroll-behavior: smooth;
 }
+#univ_blob_1{
+    position: absolute;
+    
+    z-index: -1;    
+    
+}
 body{
     background-color: rgb(236, 234, 234);
 }
@@ -139,7 +145,7 @@ h1{
 /*<<<<<<<<<<<<<<<<<< C O N T E N T >>>>>>>>>>>>>>>>>>*/
 
 .homebox{
-    background: linear-gradient(pink, rgb(255, 153, 168));
+    background: linear-gradient(rgba(255, 192, 203, 0), rgba(255, 153, 168, 0.363));
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -193,7 +199,7 @@ h1{
     z-index: 11;
     position: absolute;
     top:200px;
-    animation: wobble 5s infinite;
+    animation: wobble 9s infinite;
 
 }
 .Sarthak{
@@ -207,7 +213,7 @@ h1{
     z-index: 12;
     position: absolute;
     top:200px; 
-    animation: wobble 5s infinite;
+    animation: wobble 9s infinite;
 }
 .Sarthak-stroke{
     font-family: 'poppins',sans-serif;
@@ -530,44 +536,113 @@ h1{
     font-weight: 600;
     font-family: 'poppins',sans-serif;
 }
-
-.contactcontent{
-    border: solid rgb(133, 133, 133) 5px;
-    border-radius: 40px;
+.parent_contact{
+    position: relative;
+   
+    border-radius: 20px;
     display: flex;
-    padding: 50px 30px ;
     align-items: center;
-    min-height: 520px;
-    margin: 16px 16px 16px 90px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    height: 520px;
+    margin: 16px;
 }
-.contactimg{
-    position:relative;
-    overflow: hidden; 
-    max-width: 400px;
-    background-color: rgba(0, 0, 0, 0);
-}
-#svgobject3{
+.contact_overlay{
     position: absolute;
-}
-#svgobject4{
-    position: absolute;
-}
-#svgobject5{
+    border-radius: 20px 100px 100px  20px;
+    margin-left: 100px;
+    background:rgb(255, 255, 255,0.1);
+    
+    width: 500px;
+    height: 350px;
+    z-index: 10;
     
 }
-.contactform{
-    min-width: 400px;
-    min-height: 400px;
-    background-color: rgb(255, 89, 130);
+.contact_base{
+    position: absolute;
+    border-radius: 20px 100px 100px  20px;
+    margin-left: 100px; 
+    background-color:rgb(214, 170, 255) ;
+    width: 500px;
+    height: 350px;
+    z-index: 5;
+}
+.contact_overlay h2{
+    padding: 10px 120px 0 0;
+    font-weight: 600;
+    align-self: center;
+}
+.contact_base h4{
+    padding-top: 310px;
+}
+#contact_blob_1{
+    margin-right: 500px;
+    top:150px;
+    position: absolute;
+    z-index: 4;
+}
+#contact_blob_2{
+    margin-right: 500px;
+    top: 150px;
+    position: absolute;
+    z-index: 6;
+    filter: blur(3px);
 }
 
-
-
-
+#contact-form{
+    
+    background-color: none;
+    display: flex;
+    width: 300px;
+    height: 350px;
+    flex-direction: column;
+    padding: 5px 5px 5px 30px;
+}
+#name{
+    max-width: 270px;
+    min-width: 270px;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    background-color: white;
+    
+    padding: 15px;
+    border: none;
+}
+#name:focus{
+    outline: 3px solid rgba(183, 0, 255, 0.438);
+}
+#con-message{
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    min-height: 170px;
+    min-width: 270px;
+    max-width: 270px;
+    max-height: 170px;
+    font-size: 15px;
+    padding: 15px;
+}
+#message:focus{
+    outline: 3px solid rgba(183, 0, 255, 0.438);
+}
+#contact-form-submit{
+    align-self: center;
+    border: 3px rgb(129, 0, 204, 0)  solid;
+    width: 100px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: poppins ,sans-serif;
+    font-weight: 600;
+    background-color: #9900ff91;
+    color: white;
+}
+#contact-form-submit:hover{
+    border: 3px rgb(129, 0, 204, 0.3) solid;
+    transition: 0.3s;
+}
+#contact-form-submit:active{
+    background-color: #7100bd;
+}
 
 
 
@@ -637,7 +712,9 @@ h1{
 
 #updates{
     letter-spacing: 4px;
+    font-weight: 600;
     padding: 20px;
-    background-color:rgba(0, 0, 0, 0.514);
+    margin-top: 20px;
+    background-color:rgba(0, 0, 0, 0.747);
     color:white;
 }
