@@ -230,7 +230,7 @@ h1{
     clip-path: circle(50% at 100% 10%);                
     width: 200px;
 }
-.fa-facebook, .fa-github, .fa-instagram{
+.fa-facebook, .fa-github, .fa-instagram, .fa-eye{
     background-color:transparent;
     color:rgb(32, 32, 32);
     transition:0.3s;
@@ -244,6 +244,9 @@ h1{
     color:#ffffff;
 }
 .fa-instagram:hover{
+    color: #ffffff;
+}
+.fa-eye:hover{
     color: #ffffff;
 }
 .fab{
@@ -553,17 +556,111 @@ h1{
 }
 .grid{
     display: grid;
-    grid-template-columns: 50% 50%;
 }
 .upper{
+    display: grid;
     min-width: 800px;
     min-height: 200px;
     background-color: #c6a6ff;
     border-radius: 50px;
+    grid-template-columns: auto 50%;
+    padding: 10px;
 }
-.lower{
+.griditem1{
+    position: relative;
+    margin: 5px;
+    background-color: #ba93fd;
+    border-radius: 40px;
+    overflow: hidden;
+    max-width: 100%;
+    height: min-content;
+    align-items: center;
+}
+#item1tile{
+   width: 100%;
+}
+.griditem2{
+    display: grid;
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+    grid-template-rows: 60% 40%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.griditem3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #decbfd00;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+}
+.gridcode{
+    background-color: #ffffff67;
+    text-align: center;
+    color: #000000;
+    border-radius: 10PX;
+    width: max-content;
+    margin: 5px;
+    padding: 2px 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.griditem4{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #decbfd00;
+    border-radius: 30px;
+    margin: 5px;
+}
+#itemlink1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: #ffffff57;
+    display: none;
+}
+#itemlink2{
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: #ffffff57;
+    display: none;
+}
+#itemlink3{
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: #ffffff57;
+}
+#itemlink4{
+    
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 25px;
+    margin: 5px;
+    background-color: #ffffff57;
+}
+#itemlink1:hover, #itemlink2:hover, #itemlink3:hover, #itemlink4:hover{
+    background-color: #4747472d;
+    transition: 0.3s ease-in-out;
+}
+#projlinks{
+    padding: 20px 10px;
+}
 
-}
 
 
 
