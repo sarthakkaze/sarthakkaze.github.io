@@ -32,7 +32,7 @@ nav{
     height: 45px;
     align-items: center;
     border-radius: 10px;
-    background: hwb(0 100% 0% / 0.534);
+    background: hwb(0 100% 0% / 0.473);
  /*   box-shadow:  5px 5px 20px #BABECC, 
                 -5px -5px 10px #ffffff; */
     transition: 0.3s;
@@ -566,18 +566,34 @@ h1{
     grid-template-columns: auto 50%;
     padding: 10px;
 }
+.griditem0{
+    position: absolute;
+    z-index: 2;
+    
+    background-color: #8b8b8b44;
+    backdrop-filter: blur(10px);
+    border-radius: 38px;
+    padding: 20px;
+    opacity: 100;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: 'poppins',sans-serif ;
+}
+
 .griditem1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin: 5px;
     background-color: #ba93fd;
     border-radius: 40px;
     overflow: hidden;
-    max-width: 100%;
-    height: min-content;
-    align-items: center;
+
+    
 }
 #item1tile{
-   width: 100%;
+    width: 100%;
 }
 .griditem2{
     display: grid;
@@ -863,18 +879,53 @@ h1{
                 }
             }
 
-    }
+    }ww
 
 .skill-bg-active{
     background-color: black;
     transition: 1s ease-in-out;
 }
 
+.fotter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   /* background-color: #ffffff; */
+    border-top: solid 0.1rem rgb(184, 184, 184);    
+    width: auto;
+  /*  border-radius: 50px 50px 0 0 ; */
+    margin: 0 2rem;
+    padding: 2rem 0;
+}
+
+.textfoot{
+    backdrop-filter: blur(10px);
+    background-color: #a6ffe15e;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(2, 131, 92)
+
+}
+.messagefoot{
+
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+    
+
+
 #updates{
     letter-spacing: 4px;
     font-weight: 600;
     padding: 20px;
     margin-top: 20px;
-    background-color:rgba(0, 0, 0, 0.747);
+    background-color:rgba(165, 95, 95, 0.747);
     color:white;
 }
