@@ -25,7 +25,7 @@ btn.addEventListener("click", function() {
   if (theme.getAttribute("href") == "light-theme.css") {
     // ... then switch it to "dark-theme.css"
     theme.href = "dark-theme.css";
-  // Otherwise...
+  // Otherwise... 
   } else {
     // ... switch it to "light-theme.css"
     theme.href = "light-theme.css";
